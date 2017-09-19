@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>360云盘</title>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+</head>
+<body>
+	<div id="doc">
+		<div id="topPanel" class="header">
+			<a id="logo" class="logo" href="#" title="云盘首页"></a>
+			<ul class="nav-bar">
+				<li class="first current"><a class="pan" href="#">网盘</a></li>
+				<li><a class="collect" href="#">云收藏</a></li>
+				<li><a class="eyun" href="#">企业云盘</a></li>
+				<li><a class="more" href="#">更多</a></li>
+			</ul>
+			<div class="top-bar-r">
+				<a href="#" class="vip-link">会员记录</a>
+				<a href="#" class="dl-link">下载客户端</a>
+				<div class="user-info-wrap user-info-on">
+					<div class="user-name">
+						<a href="#" id="tpUserInfo" onclick="return false">
+							<span class="avatar-mask"></span>
+							<img src="./img/user.jpg" width="32" height="32" class="avatar">
+							<span class="name-box">
+								<span class="text">zmiiy_</span>
+							</span>
+						</a>
+					</div>
+					<div id="userInfo" class="lottery-ing">
+						<ul class="menu menu-user-info">
+							<li>
+								<a href="#">
+									<i class="icon profile"></i>
+									<span class="text">帐号中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon auth"></i>
+									<span class="text">申请个人认证</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon vol-records"></i>
+									<span class="text">会员记录</span>
+								</a>
+							</li>
+							<li class="message">
+								<a href="#">
+									<i class="icon message"></i>
+									<span class="text">云盘消息 <em>99+</em></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon yp-level"></i>
+									<span class="text">云盘等级</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon vol-records"></i>
+									<span class="text">扩容记录</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon recharge"></i>
+									<span class="text">空间升级卡</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon invite"></i>
+									<span class="text">邀请好友</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon feedback"></i>
+									<span class="text">意见反馈</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon help"></i>
+									<span class="text">帮助中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-lottery"></i>
+									<span class="text">每日抽奖</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon icon-complain"></i>
+									<span class="text">我要申诉</span>
+								</a>
+							</li>
+							<li class="loginout">
+								<a href="#" class="exit">
+									<i class="icon logout"></i>
+									<span class="text">退出云盘</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="leftPanel">
+			<div class="nav" style="height:290px;">
+				<ul>
+					<li class="current">
+						<a href="#">
+							<i class="icon icon-file"></i>
+							<span class="text">所有文件</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-video"></i>
+							<span class="text">视频</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-music"></i>
+							<span class="text">音乐</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-text"></i>
+							<span class="text">文档</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-img"></i>
+							<span class="text">图片</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li class="tab-link">
+						<a href="#">
+							<i class="icon icon-link"></i>
+							<span class="text">我的分享</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-sFile"></i>
+							<span class="text">保险箱</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-inbox"></i>
+							<span class="text">收件箱</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon-recycle"></i>
+							<span class="text">回收站</span>
+							<span class="bg"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="space-box">
+				<span class="progress">
+					<span class="progress-used" style="width:2.5%;"></span>
+				</span>
+				<div class="space-content">
+					<span class="space-desc">255.38GB/46.01TB</span>
+				</div>
+			</div>
+
+			<div class="copyright-protect">
+				<a href="#">版权保护投诉指引</a>
+			</div>
+		</div>
+
+		<div id="mainPanel">
+			<div id="mainTabs">
+				<div class="real-search-bar search-bar">
+					<div class="search-input-ctn">
+						<label class="search-placeholder" style="display:none;">搜索我的文件</label>
+						<input placeholder="搜索我的文件" class="serch-input">
+						<i class="icon-close"></i>
+					</div>
+					<span class="y-btn y-btn-submit y-btn-gray">
+						<i class="icon-search"></i>
+					</span>
+				</div>
+				<div id="toolbar">
+					<div class="btn-group">
+						<div class="item">
+							<span class="y-btn y-btn-blue">
+								<i class="icon icon-upload"></i>
+								<span class="label">上传</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="y-btn y-btn-gray">
+								<i class="icon icon-new"></i>
+								<span class="label">新建文件夹</span>
+							</span>
+							<span class="y-btn y-btn-gray">
+								<i class="icon icon-offline"></i>
+								<span class="label">离线下载</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="y-btn y-btn-gray">
+								<i class="icon icon-download"></i>
+								<span class="label">下载</span>
+							</span>
+							<span class="y-btn y-btn-gray">
+								<i class="icon icon-delete"></i>
+								<span class="label">删除</span>
+							</span>
+							<span class="y-btn y-btn-share">
+								<i class="icon icon-new"></i>
+								<span class="label">分享</span>
+							</span>
+							<span class="y-btn y-btn-gray">
+								<span class="label">更多</span>
+								<i class="caset"></i>
+							</span>
+						</div>
+					</div>
+					<div class="display-mode">
+						<a href="#" class="cmd text"></a>
+						<a href="#" class="cmd pic pic-cur"></a>
+					</div>
+					<div class="sort">
+						<h2>
+							<a href="#">
+								<i class="icon"></i>文件名
+							</a>
+						</h2>
+						<ul>
+							<li><a class="asc" href="#">
+								<i class="icon"></i>
+								文件名
+							</a></li>
+							<li><a class="asc" href="#">
+								<i class="icon"></i>
+								大小
+							</a></li>
+							<li><a class="desc" href="#">
+								<i class="icon"></i>
+								最近上传
+							</a></li>
+							<li><a class="desc" href="#">
+								<i class="icon"></i>
+								修改日期
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="crumb" class="crumb">
+					<div class="crumb-path">
+						<span class="path-item">所有文件</span>
+					</div>
+				</div>
+
+				<div id="fileList" class="file-list-box">
+					<div class="fileListMain">
+						<ul class="ico-list">
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">111111111111112</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">cd翻录</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">办公</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">八月份</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">一月份</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">四月份</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">图片</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">优米网创业</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">网站备案</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">哇过来</span>
+								</div>
+							</li>
+							<li>
+								<div class="column column-name">
+									<span class="ico ico-folder"></span>
+									<span class="text">success</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

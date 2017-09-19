@@ -1,0 +1,22 @@
+/*reset*/
+
+body,div,ul,li,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #fff;
+	color: #333;
+	font: 12px/1.5 tahoma,arial;
+}
+a{
+	color: #0068b7;
+	text-decoration: none;
+	outline: none;
+}
+ol,ul{
+	list-style: none;
+}
+img{
+	border:0;
+}
